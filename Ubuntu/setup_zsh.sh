@@ -18,3 +18,6 @@ echo "reload zsh config with 'source ~/.zshrc`"
 echo "You may want to switch to zsh from bash if you already have not by running 'chsh -s $(which zsh)'
 echo "You can reassign tab key behaviour to cycle through selection list by running the below command:"
 echo "bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete"
+
+# Reference:
+# https://github.com/marlonrichert/zsh-autocomplete#configuration
