@@ -15,7 +15,7 @@ git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $ZS
 echo "Now add plugins to ~/.zshrc line below"
 echo "plugins=(git zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting zsh-autocomplete)"
 echo "reload zsh config with 'source ~/.zshrc`"
-echo "You may want to switch to zsh from bash if you already have not by running 'chsh -s $(which zsh)'
+echo "You may want to switch to zsh from bash if you already have not by running 'chsh -s $(which zsh)'"
 echo "You can reassign tab key behaviour to cycle through selection list by running the below command:"
 echo "bindkey '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete"
 
