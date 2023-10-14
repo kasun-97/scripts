@@ -20,7 +20,7 @@ cd ~/android/lineage
 repo init -u https://github.com/kasun-97/LineageOS-20.0.git -b los-20 --git-lfs
 
 echo "clone local manifest"
-wget https://raw.githubusercontent.com/kasun-97/local_manifests/los-20/sweet_los-20_roomservice.xml -P ~/android/lineage/.repo/local_manifests/
+wget https://raw.githubusercontent.com/kasun-97/local_manifests/los-20/sweet/sweet_los-20_roomservice.xml -P ~/android/lineage/.repo/local_manifests/
 
 echo "sync the source"
 repo sync -j$(nproc --all)
