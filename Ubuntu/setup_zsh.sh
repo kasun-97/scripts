@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Install ZSH"
-sudo apt install zsh -y
+sudo apt install zsh git -y
 
 echo "Clone plugins"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.zsh/plugins/powerlevel10k
