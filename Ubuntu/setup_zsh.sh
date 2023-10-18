@@ -7,6 +7,7 @@ echo "Clone plugins"
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.zsh/plugins/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions $HOME/.zsh/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.zsh/plugins/zsh-syntax-highlighting
+git clone --depth 1 -- https://github.com/marlonrichert/zsh-autocomplete.git $HOME/.zsh/plugins/zsh-autocomplete
 wget -P $HOME/.zsh/plugins https://raw.githubusercontent.com/rupa/z/master/z.sh
 
 echo "Get the dotfiles"
