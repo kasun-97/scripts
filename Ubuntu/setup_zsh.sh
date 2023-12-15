@@ -15,6 +15,7 @@ echo "Get aliases dotfile"
 wget -P $HOME/.oh-my-zsh https://raw.githubusercontent.com/kasun-97/dotfiles/master/.zsh/.aliases
 
 echo "Get zshrc config"
+mv ~/.zshrc ~/.zshrc_
 wget -P $HOME https://raw.githubusercontent.com/kasun-97/dotfiles/master/.zsh/.zshrc
 
 # Swtich to zsh
