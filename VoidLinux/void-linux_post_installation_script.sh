@@ -16,3 +16,8 @@ sudo xbps-install -y mesa-vulkan-radeon
 sudo xbps-install -y xf86-video-amdgpu # for Xorg
 sudo xbps-install -y mesa-vaapi
 sudo xbps-install -y mesa-vdpau
+
+# Configure Session and Seat management
+sudo xbps-install -y dbus
+sudo ln -s /etc/sv/dbus/ /var/service/dbus
+sudo xbps-install -y elogind
