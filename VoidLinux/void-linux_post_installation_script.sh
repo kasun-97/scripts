@@ -49,6 +49,9 @@ install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
 # Start bspwm with dbus-run-session
 echo "dbus-run-session bspwm" > ~/.xinitrc
 
+# Enable SSH service
+sudo ln -s /etc/sv/sshd /var/service/
+
 # Install noto fonts
 sudo xbps-install -y noto-fonts-ttf noto-fonts-emoji noto-fonts-cjk
 
