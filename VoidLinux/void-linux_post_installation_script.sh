@@ -39,3 +39,10 @@ sudo xbps-install -y libspa-bluetooth
 # Configure bluetooth service 
 sudo xbps-install -y bluez
 sudo ln -s /etc/sv/bluetoothd /var/service/
+
+# Install bspwm with sxhkd
+sudo xbps-install -y xorg-minimal xinit
+sudo xbps-install -y bspwm sxhkd
+install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
+install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
+
