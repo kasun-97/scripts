@@ -46,3 +46,5 @@ sudo xbps-install -y bspwm sxhkd
 install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
 install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
+# Start bspwm with dbus-run-session
+echo "dbus-run-session bspwm" > ~/.xinitrc
