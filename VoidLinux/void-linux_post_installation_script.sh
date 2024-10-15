@@ -21,3 +21,9 @@ sudo xbps-install -y mesa-vdpau
 sudo xbps-install -y dbus
 sudo ln -s /etc/sv/dbus/ /var/service/dbus
 sudo xbps-install -y elogind
+
+# Configuring audio with PipeWire
+sudo xbps-install -y pipewire
+sudo mkdir -p /etc/pipewire/pipewire.conf.d
+sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire.conf.d/
+sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/
