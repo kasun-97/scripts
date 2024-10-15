@@ -69,3 +69,9 @@ sudo ln -s /etc/sv/vnstatd /var/service/ # enable vnstat service
 
 sudo xbps-install -y p7zip xarchiver unrar unzip # compression tools
 
+# Install JetBrainsMono nerd font
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip \
+&& cd ~/.local/share/fonts \
+&& unzip JetBrainsMono.zip \
+&& rm JetBrainsMono.zip \
+&& fc-cache -fv
