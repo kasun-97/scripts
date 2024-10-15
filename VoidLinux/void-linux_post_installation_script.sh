@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e # exit on first error
 
 echo "Welcome to Void Linux post installation script!"
 
