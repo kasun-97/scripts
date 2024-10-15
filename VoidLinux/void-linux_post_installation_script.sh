@@ -51,3 +51,21 @@ echo "dbus-run-session bspwm" > ~/.xinitrc
 
 # Install noto fonts
 sudo xbps-install -y noto-fonts-ttf noto-fonts-emoji noto-fonts-cjk
+
+# Install essential tools
+sudo xbps-install -y dmenu # search tool
+sudo xbps-install -y polybar # bar
+sudo xbps-install -y picom # compositor
+sudo xbps-install -y xrandr # need to set screen resolution
+sudo xbps-install -y nitrogen # to set wallpapers easily
+sudo xbps-install -y lxappearance # change appearance - gtk themes, icon themes, fonts, etc.
+sudo xbps-install -y papirus-icon-theme # an icon theme
+sudo xbps-install -y pcmanfm # GUI file manager
+
+sudo xbps-install -y bash-completion git curl wget 
+
+sudo xbps-install -y htop btop vnstat # monitoring tools
+sudo ln -s /etc/sv/vnstatd /var/service/ # enable vnstat service
+
+sudo xbps-install -y p7zip xarchiver unrar unzip # compression tools
+
