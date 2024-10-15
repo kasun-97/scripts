@@ -88,3 +88,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-
 # Use my zshrc configuration
 mv ~/.zshrc ~/.zshrc_ # backup current config file
 wget -P $HOME https://raw.githubusercontent.com/kasun-97/dotfiles/master/.zsh/.zshrc
+
+# Download a nice wallpaper
+mkdir -p ~/Library/3-Resources/Wallpapers
+wget -P ~/Library/3-Resources/Wallpapers https://raw.githubusercontent.com/D3Ext/aesthetic-wallpapers/refs/heads/main/images/void-black-4k.png
