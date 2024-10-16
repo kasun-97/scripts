@@ -46,3 +46,14 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 && unzip JetBrainsMono.zip \
 && rm JetBrainsMono.zip \
 && fc-cache -fv
+
+# Configuring audio with PipeWire
+sudo xbps-install -y pipewire
+sudo mkdir -p /etc/pipewire/pipewire.conf.d
+sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pipewire.conf.d/
+sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/
+
+# ASLA integration
+# sudo mkdir -p /etc/alsa/conf.d
+# sudo ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
+# sudo ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
