@@ -79,3 +79,19 @@ sudo xbps-install -y \
 	p7zip xarchiver unrar # compression tools
 
 sudo ln -s /etc/sv/vnstatd /var/service/ # enable vnstat service
+
+# Install ZSH and Oh My ZSH
+sudo xbps-install -y zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# install ZSH plugins needed
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/.oh-my-zsh/custom/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+# Use my zshrc configuration
+mv ~/.zshrc ~/.zshrc_ # backup current config file
+wget -P $HOME https://raw.githubusercontent.com/kasun-97/dotfiles/master/.zsh/.zshrc
+
+# Get aliases dotfile
+wget -P $HOME/.oh-my-zsh https://raw.githubusercontent.com/kasun-97/dotfiles/master/.zsh/.aliases
