@@ -57,3 +57,10 @@ sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pip
 # sudo mkdir -p /etc/alsa/conf.d
 # sudo ln -s /usr/share/alsa/alsa.conf.d/50-pipewire.conf /etc/alsa/conf.d
 # sudo ln -s /usr/share/alsa/alsa.conf.d/99-pipewire-default.conf /etc/alsa/conf.d
+
+# Configure bluetooth service 
+sudo xbps-install -y bluez
+sudo ln -s /etc/sv/bluetoothd /var/service/
+
+# Bluetooth audio 
+sudo xbps-install -y libspa-bluetooth
