@@ -6,4 +6,7 @@ echo "Welcome to Void Linux post installation script!"
 sudo xbps-install -Suy
 
 # Add non-free and multilib repositories
-sudo xbps-install -y void-repo-nonfree void-repo-multilib void-repo-multilib-nonfree
+sudo xbps-install -y void-repo-nonfree void-repo-multilib void-repo-multilib-nonfreeo
+
+# Update the system again
+sudo xbps-install -Suy
