@@ -10,3 +10,6 @@ sudo xbps-install -y void-repo-nonfree void-repo-multilib void-repo-multilib-non
 
 # Update the system again
 sudo xbps-install -Suy
+
+# Install firmware - AMD
+sudo xbps-install -y linux-firmware-amd
