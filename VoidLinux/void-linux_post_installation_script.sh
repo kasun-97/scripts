@@ -13,3 +13,6 @@ sudo xbps-install -Suy
 
 # Install firmware - AMD
 sudo xbps-install -y linux-firmware-amd
+
+# Install essentials needed
+sudo xbps-install -y bash-completion git curl wget unzip
