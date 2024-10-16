@@ -21,3 +21,6 @@ sudo xbps-install -y bash-completion git curl wget unzip
 sudo xbps-install -y dbus
 sudo ln -s /etc/sv/dbus/ /var/service/dbus
 sudo xbps-install -y elogind
+
+# Enable SSH service
+sudo ln -s /etc/sv/sshd /var/service/
