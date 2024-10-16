@@ -27,3 +27,9 @@ sudo ln -s /etc/sv/sshd /var/service/
 
 # Install graphics drivers - AMD
 sudo xbps-install -y mesa-dri vulkan-loader mesa-vulkan-radeon xf86-video-amdgpu mesa-vaapi mesa-vdpau
+
+# Install bspwm with sxhkd
+sudo xbps-install -y xorg-minimal xinit
+sudo xbps-install -y bspwm sxhkd
+install -Dm755 /usr/share/doc/bspwm/examples/bspwmrc ~/.config/bspwm/bspwmrc
+install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
