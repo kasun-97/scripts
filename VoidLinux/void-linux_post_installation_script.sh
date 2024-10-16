@@ -66,7 +66,7 @@ sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo xbps-install -y libspa-bluetooth
 
 # Install essential tools
-sudo xbps-install -y dmenu polybar picom xrandr nitrogen lxappearance papirus-icon-theme pcmanfm htop btop vnstat p7zip xarchiver unrar
+sudo xbps-install -y dmenu polybar picom xrandr nitrogen lxappearance papirus-icon-theme pcmanfm htop btop vnstat p7zip xarchiver
 	# dmenu           # search tool
 	# polybar         # bar
 	# picom           # compositor
@@ -76,7 +76,7 @@ sudo xbps-install -y dmenu polybar picom xrandr nitrogen lxappearance papirus-ic
 	# papirus-icon-theme   # an icon theme
 	# pcmanfm          # GUI file manager
 	# htop btop vnstat   # monitoring tools
-	# p7zip xarchiver unrar # compression tools
+	# p7zip xarchiver # compression tools
 
 sudo ln -s /etc/sv/vnstatd /var/service/ # enable vnstat service
 
