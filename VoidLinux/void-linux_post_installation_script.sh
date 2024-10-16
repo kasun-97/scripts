@@ -36,3 +36,13 @@ install -Dm644 /usr/share/doc/bspwm/examples/sxhkdrc ~/.config/sxhkd/sxhkdrc
 
 # Start bspwm with dbus-run-session
 echo "dbus-run-session bspwm" > ~/.xinitrc
+
+# Install noto fonts
+sudo xbps-install -y noto-fonts-ttf noto-fonts-emoji noto-fonts-cjk
+
+# Install JetBrainsMono Nerd Font
+wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip \
+&& cd ~/.local/share/fonts \
+&& unzip JetBrainsMono.zip \
+&& rm JetBrainsMono.zip \
+&& fc-cache -fv
