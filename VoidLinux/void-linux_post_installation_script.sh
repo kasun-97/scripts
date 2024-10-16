@@ -16,3 +16,8 @@ sudo xbps-install -y linux-firmware-amd
 
 # Install essentials needed
 sudo xbps-install -y bash-completion git curl wget unzip
+
+# Configure Session and Seat management
+sudo xbps-install -y dbus
+sudo ln -s /etc/sv/dbus/ /var/service/dbus
+sudo xbps-install -y elogind
