@@ -24,3 +24,6 @@ sudo xbps-install -y elogind
 
 # Enable SSH service
 sudo ln -s /etc/sv/sshd /var/service/
+
+# Install graphics drivers - AMD
+sudo xbps-install -y mesa-dri vulkan-loader mesa-vulkan-radeon xf86-video-amdgpu mesa-vaapi mesa-vdpau
