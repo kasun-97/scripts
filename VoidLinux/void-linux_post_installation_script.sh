@@ -66,17 +66,17 @@ sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo xbps-install -y libspa-bluetooth
 
 # Install essential tools
-sudo xbps-install -y \
-	dmenu \          # search tool
-	polybar \        # bar
-	picom \          # compositor
-	xrandr \         # needed to set screen resolution
-	nitrogen \       # to set wallpapers easily
-	lxappearance \   # change appearance - gtk themes, icon themes, fonts, etc.
-	papirus-icon-theme \  # an icon theme
-	pcmanfm \         # GUI file manager
-	htop btop vnstat \  # monitoring tools
-	p7zip xarchiver unrar # compression tools
+sudo xbps-install -y dmenu polybar picom xrandr nitrogen lxappearance papirus-icon-theme pcmanfm htop btop vnstat p7zip xarchiver unrar
+	# dmenu           # search tool
+	# polybar         # bar
+	# picom           # compositor
+	# xrandr          # needed to set screen resolution
+	# nitrogen        # to set wallpapers easily
+	# lxappearance    # change appearance - gtk themes, icon themes, fonts, etc.
+	# papirus-icon-theme   # an icon theme
+	# pcmanfm          # GUI file manager
+	# htop btop vnstat   # monitoring tools
+	# p7zip xarchiver unrar # compression tools
 
 sudo ln -s /etc/sv/vnstatd /var/service/ # enable vnstat service
 
