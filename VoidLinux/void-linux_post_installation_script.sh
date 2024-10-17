@@ -66,11 +66,12 @@ sudo ln -s /etc/sv/bluetoothd /var/service/
 sudo xbps-install -y libspa-bluetooth
 
 # Install essential tools
-sudo xbps-install -y dmenu polybar picom xrandr nitrogen lxappearance papirus-icon-theme pcmanfm htop btop vnstat p7zip xarchiver
+sudo xbps-install -y dmenu polybar picom xrandr xsetroot nitrogen lxappearance papirus-icon-theme pcmanfm htop btop vnstat p7zip xarchiver
 	# dmenu           # search tool
 	# polybar         # bar
 	# picom           # compositor
 	# xrandr          # needed to set screen resolution
+ 	# xsetroot        # needed to set curser icon
 	# nitrogen        # to set wallpapers easily
 	# lxappearance    # change appearance - gtk themes, icon themes, fonts, etc.
 	# papirus-icon-theme   # an icon theme
